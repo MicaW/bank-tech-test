@@ -11,4 +11,8 @@ class Account
     @balance = (balance + amount)
   end
 
+  def debit(amount)
+    @balance = (balance - amount)
+  end
+
 end
