@@ -1,11 +1,16 @@
 class Account
 
   DEFAULT_BALANCE = 0
+  attr_accessor :balance
 
   def initialize (balance = DEFAULT_BALANCE)
     @balance = balance
   end
 
-attr_accessor :balance
+  def credit(amount)
+    @balance = (balance + amount)
+  end
+
+
 
 end
