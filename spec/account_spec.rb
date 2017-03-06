@@ -8,12 +8,18 @@ describe Account do
   end
 
   describe '#credit' do
-    it 'adds funds to the account\'s balance' do
+    it 'adds funds to the account balance' do
       account.credit(1000)
       expect(account.balance).to eq(1000)
     end
   end
 
+  describe '#debit' do
+    it 'removes funds from the account balance' do
+      account.debit(1000)
+      expect(account.balance).to eq(-1000)
+    end
+  end
 
 
 end

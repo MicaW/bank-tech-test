@@ -11,6 +11,4 @@ class Account
     @balance = (balance + amount)
   end
 
-
-
 end
