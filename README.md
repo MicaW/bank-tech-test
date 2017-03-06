@@ -61,3 +61,13 @@ As a bank customer,
 I want to interact with my bank via the command line,
 So that I can use my bank in my preferred method.
 ```
+
+## Domain Model
+
+```
+Object    | Messages
+
+Account   | credit
+          | debit
+          | print statement
+```
