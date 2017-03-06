@@ -7,6 +7,13 @@ describe Account do
     expect(account.balance).to eq(0)
   end
 
+  describe '#credit' do
+    it 'adds funds to the account\'s balance' do
+      account.credit(1000)
+      expect(account.balance).to eq(1000)
+    end
+  end
+
 
 
 end
