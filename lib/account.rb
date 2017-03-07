@@ -17,6 +17,7 @@ class Account
 
   def debit(amount)
     @balance -= amount
+    debit_transaction(amount)
   end
 
   private
@@ -25,6 +26,14 @@ class Account
     date = Time.now.strftime('%m/%d/%Y')
     credit = amount
     debit = nil
+    balance = @balance
+    @Transaction.new(date, credit, debit, balance)
+  end
+
+  def debit_transaction(amount)
+    date = Time.now.strftime('%m/%d/%Y')
+    credit = nil
+    debit = amount
     balance = @balance
     @Transaction.new(date, credit, debit, balance)
   end

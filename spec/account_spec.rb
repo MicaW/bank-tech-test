@@ -23,8 +23,13 @@ describe Account do
 
   describe '#debit' do
     it 'removes funds from the account balance' do
+      allow(transaction_class).to receive(:new)
       account.debit(1000)
       expect(account.balance).to eq(-1000)
+    end
+    it 'initializes a transaction when a debit is made on the account' do
+      expect(transaction_class).to receive(:new)
+      account.debit(1000)
     end
   end
 
