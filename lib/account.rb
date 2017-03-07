@@ -4,6 +4,7 @@ class Account
 
   DEFAULT_BALANCE = 0
   attr_accessor :balance
+  attr_accessor :Transaction
 
   def initialize (balance = DEFAULT_BALANCE, transaction_class)
     @balance = balance

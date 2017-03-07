@@ -33,11 +33,4 @@ describe Account do
     end
   end
 
-
-
-  # it 'keeps track of credits to the account in transactions' do
-  #   account.credit(1000)
-  #   account.credit(500)
-  #   expect(account.transactions).to eq([{credit: 1000}, {credit: 500}])
-  # end
 end
