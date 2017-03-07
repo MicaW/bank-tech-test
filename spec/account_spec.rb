@@ -21,10 +21,10 @@ describe Account do
     end
   end
 
-  it 'initializes a transaction when a credit is made to the account' do
-    account.credit(1000)
-    expect(transaction).to be_a(Transaction)
-  end
+  # it 'initializes a transaction when a credit is made to the account' do
+  #   account.credit(1000)
+  #   expect(transaction).to be_a(Transaction)
+  # end
 
   # it 'keeps track of credits to the account in transactions' do
   #   account.credit(1000)
