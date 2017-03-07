@@ -1,3 +1,5 @@
+require_relative 'transaction'
+
 class Account
 
   DEFAULT_BALANCE = 0
@@ -8,11 +10,11 @@ class Account
   end
 
   def credit(amount)
-    @balance = (balance + amount)
+    @balance += amount
   end
 
   def debit(amount)
-    @balance = (balance - amount)
+    @balance -= amount
   end
 
 end
